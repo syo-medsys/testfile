@@ -1,0 +1,165 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:inherit;
+  font-family:"ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", YuMincho, "Yu Mincho", 游明朝体, sans-serif;
+}
+html{
+  font-size:100%;
+  box-sizing:border-box;
+}
+#header{
+background:url(http://taka-portfoli0.com/danLP/img/header-bg.png);
+background-size:cover;
+background-position:center;
+height:80vh;
+position:relative;
+}
+.nav{
+  max-width:1080px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding-top:30px;
+}
+.nav img{
+  width:120px;
+}
+.header-list{
+  display:flex;
+  vertical-align: middle;
+}
+.nav ul{
+  width:520px;
+}
+.header-list li{
+  list-style:none;
+  flex:1;
+
+}
+.header-list a{
+  color:black;
+  text-decoration: none;
+}
+.header-title h1{
+  font-weight:normal;
+  font-size:40px;
+  position:absolute;
+  width:100%;
+  margin:0 auto;
+  top:50%;
+  text-align:center;
+  font-size:48px;
+}
+.container{
+  text-align:center;
+  display:inline-block;
+  width:100%;
+  padding-bottom:80px;
+}
+
+.container h1{
+  width:50%;
+  margin:50px auto;
+}
+.container li{
+  width:60%;
+  text-align:left;
+  margin:20px auto;
+  list-style:none;
+  font-size:18px;
+  padding-bottom:30px;
+  border-bottom:1px solid;
+}
+.container a{
+  text-decoration:none;
+  color:black;
+}
+.info{
+  border:1px solid;
+  font-size:12px;
+  padding:5px 10px;
+}
+.container span{
+  margin-right:10px;
+}
+.mainvisual{
+  display:flex;
+  max-width:980px;
+  margin:0 auto;
+}
+.contents{
+  justify-content: space-between;
+}
+
+.contents img{
+  width:90%;
+}
+.text h3{
+  font-weight:normal;
+  font-size:25px;
+  margin:10px 0;
+}
+.text a{
+  display:inline-block;
+  width:300px;
+  margin-top:10px;
+  padding:10px 0;
+  border-top:1px solid;
+  border-bottom:1px solid;
+}
+.nav_toggle {
+  display:block;
+  position:fixed;
+  top:0;
+  right:0;
+  width:1.7rem;
+  height:1.5rem;
+}
+.nav_toggle i {
+  display: block;
+  width:100%;
+  height:2px;
+  background-color: #333;
+  position:absolute;
+  transition: transform .5s, opacitiy .5s;
+}
+.nav_toggle i:nth-child(1) {
+  top:0;
+}
+.nav_toggle i:nth-child(2) {
+  top:0;
+  bottom:0;
+  margin:auto;
+}
+.nav_toggle i:nth-child(3) {
+  bottom:0;
+}
+.nav_toggle.show i:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+.nav_toggle.show i:nth-child(2) {
+  opacity: 0;
+}
+.nav_toggle.show i:nth-child(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+.hunberger {
+  position:fixed;
+  top:3rem;
+  left:0;
+  bottom:0;
+  right:0;
+  padding:1rem;
+  opacity:0;
+  visibility: hidden;
+  transition: opacity .5s, visibility: .5s;
+}
+.hunberger.show {
+  opacity: 1;
+  visibility: visible;
+}
+.header-list.show {
+  display: none;
+}
